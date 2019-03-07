@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+ * {
+     margin: 0;
+     padding: 0;
+}
+ body {
+     font-family: 'Kanit', sans-serif;
+     font-size: 14px;
+}
+ .container {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+ .activity {
+     margin: 30px;
+}
+ .top {
+     margin: 0 auto;
+}
+ .top h1 {
+     text-align: center;
+     font-size: 32px;
+     margin-bottom: 10px;
+}
+ .top >p {
+     font-size: 18px;
+     text-align: center;
+     margin: 25px 250px 40px;
+}
+ .top >hr {
+     width: 8%;
+     margin: 0 auto;
+     border: 1px solid #228B22;
+}
+ .orders, .trust, .availability {
+     text-align: center;
+}
+ .numbers, .map, .ue {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -webkit-box-pack: end;
+         -ms-flex-pack: end;
+             justify-content: flex-end;
+}
+ .numbers h2 {
+     font-size: 60px;
+     color: #228B22;
+}
+ .numbers div {
+     margin: 70px;
+}
+ .map p {
+     margin-right: 25px;
+}
+ .map img {
+     width: 50%;
+     height: 50%;
+}
+ .grant {
+     margin-left: 60px;
+     margin-top: 55px;
+}
+ .grant hr {
+     margin-top: 12px;
+     width: 8%;
+     border: 1px solid #228B22;
+}
+ .grant p {
+     margin-top: 15px;
+}
+ .grant h3{
+     color: #228B22;
+}
+
+/*MEDIA*/
+
+ @media (max-width: 767px) {
+     .top >p {
+         font-size: 18px;
+         margin: 20px auto;
+    }
+     .top >hr {
+         width: 20%;
+    }
+     .numbers, .map, .ue {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+    }
+     .numbers div {
+         margin: 152px;
+    }
+     .map {
+         margin-top: 35px;
+         text-align: center;
+    }
+     .map img {
+         width: 80%;
+         height: 80%;
+    }
+     .map p {
+         -webkit-box-ordinal-group: 2;
+             -ms-flex-order: 1;
+                 order: 1;
+         margin-top: 35px;
+         margin-right: 0;
+    }
+     .ue img {
+         -webkit-box-ordinal-group: 2;
+             -ms-flex-order: 1;
+                 order: 1;
+    }
+     .grant {
+         margin: 30px auto;
+         text-align: center;
+    }
+     .grant h3 {
+         text-align: center;
+    }
+     .grant hr {
+         display: none;
+    }
+}
